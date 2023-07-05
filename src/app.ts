@@ -7,14 +7,20 @@ import * as middlewares from './middlewares';
 import api from './api';
 import MessageResponse from './interfaces/MessageResponse';
 
+
+
+
 require('dotenv').config();
 
+// initialize app
 const app = express();
-
+// plugins
 app.use(morgan('dev'));
 app.use(helmet());
 app.use(cors());
 app.use(express.json());
+
+
 
 app.get<{}, MessageResponse>('/', (req, res) => {
   res.json({
