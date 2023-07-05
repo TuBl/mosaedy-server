@@ -1,0 +1,14 @@
+service: mosaedy-be
+
+provider:
+    name: aws
+    runtime: "nodejs18.x"
+    stage: dev
+    region: us-east-1
+
+    functions:
+        app:
+            handler: app.server
+            events:
+                - http: ANY /
+                - http: "ANY {proxy+}"

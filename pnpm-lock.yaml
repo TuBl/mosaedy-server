@@ -23,6 +23,7 @@ specifiers:
   morgan: ^1.10.0
   nodemon: ^2.0.22
   openai: ^3.3.0
+  serverless-http: ^3.2.0
   supertest: ^6.3.3
   ts-jest: ^29.1.0
   ts-node: ^10.9.1
@@ -37,6 +38,7 @@ dependencies:
   helmet: 7.0.0
   morgan: 1.10.0
   openai: 3.3.0
+  serverless-http: 3.2.0
 
 devDependencies:
   '@types/cors': 2.8.13
@@ -4242,6 +4244,11 @@ packages:
       send: 0.18.0
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /serverless-http/3.2.0:
+    resolution: {integrity: sha512-QvSyZXljRLIGqwcJ4xsKJXwkZnAVkse1OajepxfjkBXV0BMvRS5R546Z4kCBI8IygDzkQY0foNPC/rnipaE9pQ==}
+    engines: {node: '>=12.0'}
     dev: false
 
   /setprototypeof/1.2.0:
